@@ -1,2 +1,39 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixin";
+
+.btn {
+    padding: 16px 56px;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+
+    color: variables.$white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    cursor: pointer;
+}
+
+.btn_two {
+    padding: 8px 16px;
+    border-radius: var(--radius-small, 6px);
+    border: 1px solid var(--grey-divider, #DDD);
+
+    color: variables.$grey;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 126%;
+    margin: 0;
+}
+
+.btn_three {
+    padding: 16px 32px;
+    color: var(--txt-black, #282828);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    border-radius: var(--radius-small, 6px);
+    background: var(--white, #FFF);
+}

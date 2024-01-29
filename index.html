@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Агрегатор ресторанов</title>
-	<!-- Inter font -->
-	<link rel="stylesheet" href="./fonts/inter/stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Агрегатор ресторанов</title>
 	<!-- Montserrat font -->
 	<link rel="stylesheet" href="./fonts/montserrat/stylesheet.css">
 	<!-- normalize css -->
@@ -13,18 +12,100 @@
 	<!-- custom css -->
 	<link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    
+
 	<div class="wrapper">
 
-		<!-- header section -->
+		<!-- ! header section -->
 		<section class="header">
-
+			<div class="container">
+				<div class="header_box">
+					<div class="header_logo">
+						<img class="logo" src="./images/icons/logo.svg" alt="logo">
+					</div>
+					<div class="header_nav-box">
+						<nav class="header_nav">
+							<ul>
+								<li class="header_items">
+									<a class="header_link" href="#!">Main Page</a>
+								</li>
+								<li class="header_items">
+									<a class="header_link" href="#!">Categories</a>
+								</li>
+								<li class="header_items">
+									<a class="header_link" href="#!">All products</a>
+								</li>
+								<li class="header_items">
+									<a class="header_link last-child	" href="#!">All sales</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="backet_img">
+						<img class="backet" src="./images/icons/backet.svg" alt="backet">
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- main section -->
 		<main class="main">
 
+			<!-- ! first section -->
+			<section class="first_section">
+				<div class="container">
+					<div class="first_section-box">
+						<h1 class="text_h">Amazing Discounts on Garden Products!</h1>
+						<button class="btn">Check out</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- ! Categories -->
+			<section class="categories">
+				<div class="container">
+					<div class="categorie_title">
+						<h2 class="title_h">Categories</h2>
+						<img class="line_img" src="./images/icons/line.svg" alt="line">
+						<button class="btn_two">All categories </button>
+					</div>
+					<div class="categories_boxes">
+						<div class="categorie-box">
+							<img src="./images/category_1.jpg" alt="category_1">
+							<h4>Fertilizer</h4>
+						</div>
+						<div class="categorie-box">
+							<img src="./images/category_2.png" alt="category_2">
+							<h4>Protective products and septic tanks</h4>
+						</div>
+						<div class="categorie-box">
+							<img src="./images/category_3.png" alt="category_3">
+							<h4>Planting material</h4>
+						</div>
+						<div class="categorie-box last-child">
+							<img src="./images/category_4.png" alt="category_4">
+							<h4>Tools and equipment</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ! Discount -->
+			<section class="discount">
+				<div class="container">
+					<h2>5% off on the first order</h2>
+					<div class="discount_form">
+						<img src="./images/green_img.png" alt="green_img">
+						<form class="form">
+							<input type="text" placeholder="Name">
+							<input type="number" placeholder="Phone number">
+							<input type="email" placeholder="Email">
+							<button class="btn_three">Get a discount</button>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<!-- footer section -->
@@ -33,11 +114,11 @@
 		</footer>
 	</div>
 
-	<!-- bootstrap js -->
-	<script src="./libs/bootstrap/js/bootstrap.min.js"></script>
 	<!-- swiper js -->
 	<script src="./libs/swiper/swiper.min.js"></script>
+
 	<!-- custom js -->
 	<script src="./js/main.js"></script>
 </body>
+
 </html>
