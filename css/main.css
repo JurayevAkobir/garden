@@ -116,47 +116,31 @@ body {
   font-weight: 500;
   line-height: 130%;
 }
-.wrapper .first_section {
+.wrapper .main .first_section {
+  margin: 0;
+  padding: 0;
   background-image: url(../../images/first_section-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.wrapper .first_section .first_section-box {
+.wrapper .main .first_section .first_section-box {
   padding: 80px 40px 210px 0px;
 }
-.wrapper .first_section .first_section-box .text_h {
+.wrapper .main .first_section .first_section-box .text_h {
   color: #FFF;
   font-size: 96px;
   font-weight: 700;
   line-height: 110%;
   margin-bottom: 40px;
 }
-.wrapper .categories .categorie_title {
-  position: relative;
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.wrapper .categories .categorie_title .title_h {
-  color: #282828;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 110%;
-}
-.wrapper .categories .categorie_title .line_img {
-  right: 130px;
-  position: absolute;
-  margin: 0;
-}
-.wrapper .categories .categories_boxes {
+.wrapper .main .categories .categories_boxes {
   margin-top: 40px;
   display: flex;
 }
-.wrapper .categories .categories_boxes .categorie-box {
+.wrapper .main .categories .categories_boxes .categorie-box {
   margin-right: 32px;
 }
-.wrapper .categories .categories_boxes .categorie-box h4 {
+.wrapper .main .categories .categories_boxes .categorie-box h4 {
   margin-top: 16px;
   color: #282828;
   text-align: center;
@@ -164,12 +148,36 @@ body {
   font-weight: 500;
   line-height: 130%;
 }
-.wrapper .discount .container {
+.wrapper .main .title {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .main .title .title_h {
+  color: #282828;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 110%;
+}
+.wrapper .main .title .line_img {
+  right: 10%;
+  position: absolute;
+  margin: 0;
+}
+.wrapper .main .title .line_img_2 {
+  width: 1093px;
+}
+.wrapper .main .discount {
+  margin: 80px 0;
+}
+.wrapper .main .discount .container {
   padding: 32px 32px 0px 32px;
   border-radius: var(--radius-big, 12px);
   background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
 }
-.wrapper .discount .container h2 {
+.wrapper .main .discount .container h2 {
   color: var(--txt-white, #FFF);
   text-align: center;
   font-size: 64px;
@@ -177,26 +185,98 @@ body {
   line-height: 110%;
   margin-bottom: 24px;
 }
-.wrapper .discount .container .discount_form {
+.wrapper .main .discount .container .discount_form {
   display: flex;
   align-items: center;
 }
-.wrapper .discount .container .discount_form .form input {
+.wrapper .main .discount .container .discount_form .form input {
   margin-bottom: 16px;
   width: 100%;
   padding: 16px 32px;
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--white, #FFF);
   background: #0B710B;
-  color: white;
+  color: #FFF;
   font-size: 20px;
   font-weight: 500;
   line-height: 130%;
 }
-.wrapper .discount .container .discount_form .form .btn_three {
+.wrapper .main .discount .container .discount_form .form .btn_three {
   margin-top: 16px;
   width: 100%;
 }
-.wrapper .last-child {
+.wrapper .main .sale {
+  margin: 80px 0;
+}
+.wrapper .main .sale .sale_boxes {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .main .sale .sale_boxes .sale_box {
+  position: relative;
+  border-radius: var(--radius-big, 12px);
+  border: 1px solid var(--grey-divider, #DDD);
+}
+.wrapper .main .sale .sale_boxes .sale_box img {
+  border-top-right-radius: var(--radius-big, 12px);
+  border-top-left-radius: var(--radius-big, 12px);
+}
+.wrapper .main .sale .sale_boxes .sale_box .sale_texts {
+  padding: 20px 32px 32px 32px;
+}
+.wrapper .main .sale .sale_boxes .sale_box .sale_texts h4 {
+  margin-bottom: 16px;
+  overflow: hidden;
+  color: #282828;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.wrapper .main .sale .sale_boxes .sale_box .sale_texts h2 {
+  margin-right: 16px;
+  display: inline-block;
+  color: #282828;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.wrapper .main .sale .sale_boxes .sale_box .sale_texts del {
+  color: #8B8B8B;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.wrapper .main .sale .sale_boxes .sale_box .btn {
+  top: 16px;
+  right: 16px;
+  position: absolute;
+  padding: 4px 8px;
+}
+.wrapper .main .last-child {
   margin-right: 0 !important;
+}
+.wrapper .footer h1 {
+  color: #282828;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+.wrapper .footer .end_time {
+  margin-bottom: 32px;
+  width: 100%;
+  padding: 32px;
+  border-radius: var(--radius-big, 12px);
+  background: var(--light-grey, #F1F3F4);
+}
+.wrapper .footer .end_time h2 {
+  color: #282828;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.wrapper .footer .map-box {
+  margin-bottom: 80px;
 }/*# sourceMappingURL=main.css.map */
