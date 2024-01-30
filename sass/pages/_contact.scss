@@ -82,15 +82,97 @@
 
         // * Shopping cart
         .shopping_cart {
+            margin-bottom: 80px;
             .sale_boxes-two {
+                margin-top: 188px;
+
                 .sale_box {
                     display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
                     .sale_texts {
-                        
-                        .close_box {
+                        position: relative;
+
+                        h4 {
+                            margin-bottom: 32px;
+                            color: variables.$black;
+                            font-size: 40px;
+                            font-weight: 700;
+                            line-height: 110%;
+                            letter-spacing: 1.2px;
+                        }
+
+                        h2 {
+                            margin-right: 32px;
+                            display: inline-block;
+                            color: variables.$black;
+                            font-size: 64px;
+                            font-weight: 700;
+                            line-height: 110%;
+                        }
+
+                        del {
+                            margin-right: 16px;
+                            color: var(--txt-grey, #8B8B8B);
+                            font-size: 40px;
+                            font-weight: 500;
+                            line-height: 130%;
+                            text-decoration-line: strikethrough;
+                        }
+
+                        .btn_p {
+                            top: 15%;
+                            position: absolute;
+                            padding: 4px 8px;
+                        }
+
+                        .plus_minus-box {
+                            margin: 32px 0;
                             display: flex;
-                            align-items: center;
-                            justify-content: space-between;
+
+                            .plus_minus {
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    margin: 0 38px;
+                                    color: variables.$black;
+                                    text-align: center;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    line-height: 130%;
+                                }
+
+
+                            }
+
+                            .btn {
+                                padding: 10px 116px;
+                                margin-left: 32px;
+                            }
+                        }
+
+                        h5 {
+                            color: variables.$black;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 130%;
+                        }
+
+                        p {
+                            margin: 16px 0;
+                            color: variables.$black;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 130%;
+                        }
+
+                        a {
+                            color: variables.$black;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 130%;
                         }
                     }
                 }

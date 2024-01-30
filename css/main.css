@@ -358,13 +358,87 @@ body {
 .wrapper .main .sale .sale_boxes .sale_box:hover .btn_hover {
   display: flex;
 }
-.wrapper .main .shopping_cart .sale_boxes-two .sale_box {
-  display: flex;
+.wrapper .main .shopping_cart {
+  margin-bottom: 80px;
 }
-.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts .close_box {
+.wrapper .main .shopping_cart .sale_boxes-two {
+  margin-top: 188px;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts {
+  position: relative;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts h4 {
+  margin-bottom: 32px;
+  color: #282828;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 1.2px;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts h2 {
+  margin-right: 32px;
+  display: inline-block;
+  color: #282828;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 110%;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts del {
+  margin-right: 16px;
+  color: var(--txt-grey, #8B8B8B);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: strikethrough;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts .btn_p {
+  top: 15%;
+  position: absolute;
+  padding: 4px 8px;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts .plus_minus-box {
+  margin: 32px 0;
+  display: flex;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts .plus_minus-box .plus_minus {
+  display: flex;
+  align-items: center;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts .plus_minus-box .plus_minus p {
+  margin: 0 38px;
+  color: #282828;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts .plus_minus-box .btn {
+  padding: 10px 116px;
+  margin-left: 32px;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts h5 {
+  color: #282828;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts p {
+  margin: 16px 0;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts a {
+  color: #282828;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
 }
 .wrapper .main .last-child {
   margin-right: 0 !important;
