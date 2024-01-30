@@ -89,12 +89,10 @@ body {
   background: var(--white, #FFF);
 }
 
-.container {
-  padding: 0;
-  width: 1360px;
-  margin: 0 auto;
+.wrapper .header {
+  border-bottom: 1px solid var(--grey-divider, #DDD);
+  background: var(--white, #FFF);
 }
-
 .wrapper .header .header_box {
   padding: 30px 0 28px 0;
   display: flex;
@@ -116,6 +114,33 @@ body {
   font-weight: 500;
   line-height: 130%;
 }
+.wrapper .header .backet_img {
+  position: relative;
+}
+.wrapper .header .backet_img .btn {
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 7%;
+  width: 26px;
+  height: 26px;
+  fill: var(--green, #393);
+  border-radius: 50%;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 90%;
+}
+
+.container {
+  padding: 0;
+  width: 1360px;
+  margin: 0 auto;
+}
+
 .wrapper .main .first_section {
   margin: 0;
   padding: 0;
@@ -248,7 +273,7 @@ body {
   font-weight: 500;
   line-height: 130%;
 }
-.wrapper .main .sale .sale_boxes .sale_box .btn {
+.wrapper .main .sale .sale_boxes .sale_box .btn_position {
   top: 16px;
   right: 16px;
   position: absolute;
@@ -279,4 +304,68 @@ body {
 }
 .wrapper .footer .map-box {
   margin-bottom: 80px;
+}
+
+.wrapper .main .sale .sale_form {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.wrapper .main .sale .sale_form h4 {
+  margin-right: 16px;
+  color: #282828;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.wrapper .main .sale .sale_form input {
+  margin-right: 16px;
+  padding: 8px 16px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
+}
+.wrapper .main .sale .sale_form .check {
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
+}
+.wrapper .main .sale .sale_form select {
+  padding: 8px 16px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
+  color: #282828;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126%;
+  /* 20.16px */
+}
+.wrapper .main .sale .sale_boxes .sale_box {
+  transition: all 0.9s linear;
+}
+.wrapper .main .sale .sale_boxes .sale_box .btn_hover {
+  display: none;
+  padding: 16px 90px;
+  position: absolute;
+  bottom: 37%;
+  left: 16px;
+  transition: all 0.2s linear;
+}
+.wrapper .main .sale .sale_boxes .sale_box .btn_hover:hover {
+  border-radius: var(--radius-small, 6px);
+  background: var(--black, #282828);
+}
+.wrapper .main .sale .sale_boxes .sale_box:hover .btn_hover {
+  display: flex;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box {
+  display: flex;
+}
+.wrapper .main .shopping_cart .sale_boxes-two .sale_box .sale_texts .close_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .main .last-child {
+  margin-right: 0 !important;
 }/*# sourceMappingURL=main.css.map */

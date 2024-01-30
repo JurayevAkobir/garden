@@ -1,2 +1,62 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixin";
+
+.wrapper {
+    .header {
+        border-bottom: 1px solid var(--grey-divider, #DDD);
+        background: var(--white, #FFF);
+        .header_box {
+            padding: 30px 0 28px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header_nav-box {
+            .header_nav {
+                ul {
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+
+                    .header_items {
+                        list-style: none;
+
+                        .header_link {
+                            margin-right: 32px;
+                            color: variables.$black;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 130%;
+                        }
+
+
+                    }
+
+                }
+            }
+        
+        }
+        .backet_img {
+            position: relative;
+            .btn {
+                padding: 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 7%;
+                width: 26px;
+                height: 26px;
+                fill: var(--green, #393);
+                border-radius: 50%;
+
+                color: var(--white, #FFF);
+                text-align: center;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 90%;
+            }
+        }
+    }
+}

@@ -1,1 +1,105 @@
 @use "../abstracts/variables";
+
+.wrapper {
+
+    .main {
+
+
+        // * Sale section start
+        .sale {
+
+            .sale_form {
+                margin: 40px 0;
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    margin-right: 16px;
+                    color: variables.$black;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 130%;
+                }
+
+                input {
+                    margin-right: 16px;
+                    padding: 8px 16px;
+                    border-radius: var(--radius-small, 6px);
+                    border: 1px solid var(--grey-divider, #DDD);
+                }
+
+                .check {
+                    border-radius: var(--radius-small, 6px);
+                    border: 1px solid var(--grey-divider, #DDD);
+                }
+
+                select {
+                    padding: 8px 16px;
+                    border-radius: var(--radius-small, 6px);
+                    border: 1px solid var(--grey-divider, #DDD);
+
+                    color: variables.$black;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 126%;
+                    /* 20.16px */
+                }
+            }
+
+            .sale_boxes {
+
+                .sale_box {
+                    transition: all 0.9s linear;
+
+                    .btn_hover {
+                        display: none;
+                        padding: 16px 90px;
+                        position: absolute;
+                        bottom: 37%;
+                        left: 16px;
+                        transition: all 0.2s linear;
+                    }
+
+                    .btn_hover:hover {
+                        border-radius: var(--radius-small, 6px);
+                        background: var(--black, #282828);
+                    }
+                }
+
+                .sale_box:hover {
+                    .btn_hover {
+                        display: flex;
+                    }
+                }
+            }
+
+           
+        }
+        // * Sale section end
+
+
+        // * Shopping cart
+        .shopping_cart {
+            .sale_boxes-two {
+                .sale_box {
+                    display: flex;
+                    .sale_texts {
+                        
+                        .close_box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
+
+        .last-child {
+            margin-right: 0 !important;
+        }
+    }
+
+}
