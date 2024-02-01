@@ -9,6 +9,11 @@
         .sale {
 
             .sale_form {
+
+                .box {
+                    display: flex !important;
+                }
+                
                 margin: 40px 0;
                 display: flex;
                 align-items: center;
@@ -365,6 +370,7 @@
                     }
 
                     .sale-form {
+
                         input {
                             margin-bottom: 16px;
                             width: 100%;
@@ -392,4 +398,19 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1160px) {
+    .sale {
+        .sale_form {
+            flex-direction: column;
+            align-items: start !important;
+            .box {
+                margin-bottom: 16px;
+            display: block !important;
+            align-items: center;
+
+            }
+        }   
+    }
 }

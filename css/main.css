@@ -530,6 +530,9 @@ body {
     align-items: center;
     margin-left: 5px;
   }
+  .sale .sale_boxes .sale_box .btn_hover {
+    padding: 16px 76px !important;
+  }
   .discount .container h2 {
     font-size: 18px !important;
   }
@@ -538,6 +541,9 @@ body {
   margin: 40px 0;
   display: flex;
   align-items: center;
+}
+.wrapper .main .sale .sale_form .box {
+  display: flex !important;
 }
 .wrapper .main .sale .sale_form h4 {
   margin-right: 16px;
@@ -835,4 +841,16 @@ body {
 }
 .wrapper .main .last-child {
   margin-right: 0 !important;
+}
+
+@media screen and (max-width: 1160px) {
+  .sale .sale_form {
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .sale .sale_form .box {
+    margin-bottom: 16px;
+    display: block !important;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
