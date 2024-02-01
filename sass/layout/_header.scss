@@ -14,16 +14,22 @@
 
         .header_nav-box {
             .header_nav {
+                #check {
+                    display: none;
+                }
                 ul {
                     padding: 0;
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
 
                     .header_items {
                         list-style: none;
 
+
+
                         .header_link {
-                            margin-right: 32px;
+                            margin: 0 16px 0 16px;
                             color: variables.$black;
                             font-size: 20px;
                             font-weight: 500;
@@ -35,10 +41,18 @@
 
                 }
             }
-        
+            .menu_img {
+                display: none;
+                .media-btn {
+                    cursor: pointer;
+                }
+            }
+
         }
+
         .backet_img {
             position: relative;
+
             .btn {
                 padding: 1px;
                 display: flex;
@@ -59,4 +73,51 @@
             }
         }
     }
+}
+
+// media 
+@media screen and (max-width: 800px) {
+    .header {
+        .header_nav {
+            .header_ul {
+                padding-top: 30px !important;
+                margin-top: 0;
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 200px;
+                height: 100%;
+                background-color: #D9D9D9;
+                z-index: 999;
+                flex-direction: column;
+                padding-left: 65px;
+                transition: all 0.8s ease-in-out;
+
+                .header_items {
+                    display: block;
+                    padding-bottom: 8px;
+
+                    .header_link {
+                    font-size: 16px ;
+                    }
+                }
+            }
+            #check:checked~.header_ul {
+                left: 0;
+            }
+            
+        }
+
+       .menu_img {
+        display: block !important;
+        .media-btn {
+            display: block;
+        }
+       }
+    }
+
+   
+
+   
+
 }

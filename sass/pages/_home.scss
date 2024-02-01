@@ -21,10 +21,11 @@
             padding: 0;
             background-image: url(../../images/first_section-bg.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 100% 100%;
 
             .first_section-box {
                 padding: 80px 40px 210px 0px;
+                margin: 0;
 
                 .text_h {
                     color: variables.$white;
@@ -122,6 +123,10 @@
                             border: 1px solid var(--white, #FFF);
                             background: #0B710B;
 
+                            
+                        }
+
+                        input::placeholder {
                             color: variables.$white;
                             font-size: 20px;
                             font-weight: 500;
@@ -236,6 +241,74 @@
 
         .map-box {
             margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .first_section {
+        
+        .first_section-box {
+            padding: 80px 0 60px 0px !important;
+            .text_h {
+                font-size: 68px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .first_section {
+        
+        .first_section-box {
+            padding: 80px 40 60px 0px !important;
+            .text_h {
+                font-size: 56px !important;
+                margin-bottom: 10px !important;
+            }
+            .btn {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .first_section {
+        background-size: cover !important;
+        .first_section-box {
+            padding: 80px 40 60px 0px !important;
+            .text_h {
+                font-size: 38px !important;
+                margin-bottom: 10px !important;
+            }
+            .btn {
+                font-size: 14px;
+                padding: 12px 36px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .first_section {
+        background-size: cover !important;
+        .first_section-box {
+            padding: 80px 40 60px 0px !important;
+            .text_h {
+                font-size: 26px !important;
+                margin-bottom: 10px !important;
+            }
+            .btn {
+                font-size: 12px;
+                padding: 12px 26px;
+            }
         }
     }
 }
