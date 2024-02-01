@@ -202,10 +202,14 @@ body {
   margin-bottom: 40px;
 }
 .wrapper .main .categories .categories_boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+  justify-content: space-between;
   margin-top: 40px;
-  display: flex;
+  gap: 32px;
 }
 .wrapper .main .categories .categories_boxes .categorie-box {
+  text-align: center;
   margin-right: 32px;
 }
 .wrapper .main .categories .categories_boxes .categorie-box h4 {
@@ -285,10 +289,11 @@ body {
   margin: 80px 0;
 }
 .wrapper .main .sale .sale_boxes {
-  margin-top: 40px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
   justify-content: space-between;
-  align-items: center;
+  margin-top: 40px;
+  gap: 32px;
 }
 .wrapper .main .sale .sale_boxes .sale_box {
   position: relative;
@@ -296,6 +301,7 @@ body {
   border: 1px solid var(--grey-divider, #DDD);
 }
 .wrapper .main .sale .sale_boxes .sale_box img {
+  width: 100%;
   border-top-right-radius: var(--radius-big, 12px);
   border-top-left-radius: var(--radius-big, 12px);
 }
@@ -361,6 +367,25 @@ body {
   .container {
     max-width: 90%;
   }
+  .title {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title .line_img {
+    display: none;
+  }
+  .title .line_img_2 {
+    width: 1093px;
+  }
+  .sale .title {
+    align-items: center;
+  }
+  .sale .title .line_img_2 {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 1200px) {
   .first_section .first_section-box {
@@ -368,6 +393,26 @@ body {
   }
   .first_section .first_section-box .text_h {
     font-size: 68px !important;
+  }
+  .discount .container h2 {
+    font-size: 44px !important;
+  }
+  .discount .container .discount_form {
+    display: flex;
+    align-items: center;
+  }
+  .discount .container .discount_form img {
+    width: 500px;
+    margin-top: 75px;
+  }
+  .discount .container .discount_form .form .btn_three {
+    margin-bottom: 34px;
+  }
+}
+@media screen and (max-width: 925px) {
+  .discount .container .discount_form img {
+    width: 350px;
+    margin-top: 145px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -380,6 +425,35 @@ body {
   }
   .first_section .first_section-box .btn {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .discount .container h2 {
+    font-size: 28px !important;
+  }
+  .discount .container .discount_form img {
+    display: none !important;
+  }
+  .discount .container .discount_form .form input {
+    padding: 14px 24px !important;
+  }
+  .discount .container .discount_form .form input::-moz-placeholder {
+    font-size: 16px !important;
+  }
+  .discount .container .discount_form .form input::placeholder {
+    font-size: 16px !important;
+  }
+  .discount .container .discount_form .form .btn_three {
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px 0;
+  }
+  .footer h1 {
+    font-size: 35px !important;
+    margin-bottom: 15px !important;
+  }
+  .footer .end_time h2 {
+    font-size: 16px !important;
   }
 }
 @media screen and (max-width: 672px) {
@@ -397,8 +471,29 @@ body {
     font-size: 14px;
     padding: 12px 36px;
   }
+  .title_h {
+    color: #282828;
+    font-size: 44px !important;
+    font-weight: 700;
+    line-height: 110%;
+  }
 }
 @media screen and (max-width: 460px) {
+  .title {
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .title .title_h {
+    color: #282828;
+    font-size: 44px !important;
+    margin-bottom: 24px;
+  }
+  .title .line_img {
+    display: none;
+  }
+  .title .line_img_2 {
+    width: 1093px;
+  }
   .first_section {
     background-size: cover !important;
   }
@@ -412,6 +507,31 @@ body {
   .first_section .first_section-box .btn {
     font-size: 12px;
     padding: 12px 26px;
+  }
+  .categories .categories_boxes {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .categories .categories_boxes .categorie-box {
+    width: 280px !important;
+    text-align: center;
+    margin-right: 32px;
+  }
+  .categories .categories_boxes .categorie-box img {
+    width: 280px;
+  }
+  .sale .sale_boxes {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .discount .container h2 {
+    font-size: 18px !important;
   }
 }
 .wrapper .main .sale .sale_form {

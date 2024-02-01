@@ -8,7 +8,7 @@
 
 .wrapper {
 
-   
+
 
     // * Header section end
 
@@ -43,10 +43,14 @@
         .categories {
 
             .categories_boxes {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+                justify-content: space-between;
                 margin-top: 40px;
-                display: flex;
+                gap: 32px;
 
                 .categorie-box {
+                    text-align: center;
                     margin-right: 32px;
 
                     h4 {
@@ -72,6 +76,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
 
             .title_h {
                 color: variables.$black;
@@ -123,7 +128,7 @@
                             border: 1px solid var(--white, #FFF);
                             background: #0B710B;
 
-                            
+
                         }
 
                         input::placeholder {
@@ -141,7 +146,6 @@
                 }
             }
         }
-
         // Discount section end
 
 
@@ -150,10 +154,11 @@
             margin: 80px 0;
 
             .sale_boxes {
-                margin-top: 40px;
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
                 justify-content: space-between;
-                align-items: center;
+                margin-top: 40px;
+                gap: 32px;
 
                 .sale_box {
                     position: relative;
@@ -161,6 +166,7 @@
                     border: 1px solid var(--grey-divider, #DDD);
 
                     img {
+                        width: 100%;
                         border-top-right-radius: var(--radius-big, 12px);
                         border-top-left-radius: var(--radius-big, 12px);
                     }
@@ -211,6 +217,7 @@
             margin-right: 0 !important;
         }
     }
+
     //  * Main end
 
     // * Footer start
@@ -249,29 +256,110 @@
     .container {
         max-width: 90%;
     }
+
+    // Title
+    .title {
+        position: relative;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .line_img {
+            display: none;
+        }
+
+        .line_img_2 {
+            width: 1093px;
+        }
+    }
+
+    .sale {
+        .title {
+            align-items: center;
+    
+            .line_img_2 {
+                display: none !important;
+            }
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 1200px) {
     .first_section {
-        
+
         .first_section-box {
             padding: 80px 0 60px 0px !important;
+
             .text_h {
                 font-size: 68px !important;
             }
         }
     }
+
+    // Discount section start
+    .discount {
+
+        .container {
+
+            h2 {
+                font-size: 44px !important;
+            }
+
+            .discount_form {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 500px;
+                    margin-top: 75px;
+                }
+
+                .form {
+
+                    .btn_three {
+                        margin-bottom: 34px;
+                    }
+                }
+            }
+        }
+    }
+
 }
+
+@media screen and (max-width:925px) {
+     // Discount section start
+     .discount {
+
+        .container {
+
+            .discount_form {
+
+                img {
+                    width: 350px;
+                    margin-top: 145px;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 @media screen and (max-width: 850px) {
     .first_section {
-        
+
         .first_section-box {
             padding: 80px 40 60px 0px !important;
+
             .text_h {
                 font-size: 56px !important;
                 margin-bottom: 10px !important;
             }
+
             .btn {
                 font-size: 16px;
             }
@@ -279,36 +367,162 @@
     }
 }
 
+@media screen and (max-width:725px) {
+    // Discount section start
+    .discount {
+
+       .container {
+
+        h2 {
+            font-size: 28px !important;
+        }
+
+           .discount_form {
+
+               img {
+                display: none !important;
+               }
+
+               .form {
+                input {
+                    padding: 14px 24px !important;
+                }
+
+                input::placeholder {
+                    font-size: 16px !important;
+                }
+
+                .btn_three {
+                    margin-top: 16px;
+                    width: 100%;
+
+                    padding: 12px 0 ;
+                }
+            }
+           }
+       }
+   }
+
+   .footer {
+
+    h1 {
+        font-size: 35px !important;
+        margin-bottom: 15px !important;
+    }
+    .end_time {
+        h2 {
+            font-size: 16px !important;
+        }
+    }
+   }
+}
+
 @media screen and (max-width: 672px) {
     .first_section {
         background-size: cover !important;
+
         .first_section-box {
             padding: 80px 40 60px 0px !important;
+
             .text_h {
                 font-size: 38px !important;
                 margin-bottom: 10px !important;
             }
+
             .btn {
                 font-size: 14px;
                 padding: 12px 36px;
             }
         }
     }
+
+    .title_h {
+        color: variables.$black;
+        font-size: 44px !important;
+        font-weight: 700;
+        line-height: 110%;
+    }
 }
 
 @media screen and (max-width: 460px) {
+
+    .title {
+        flex-direction: column;
+        align-items: start !important;
+
+        .title_h {
+            color: variables.$black;
+            font-size: 44px !important;
+            margin-bottom: 24px;
+        }
+
+        .line_img {
+            display: none;
+        }
+
+        .line_img_2 {
+            width: 1093px;
+        }
+    }
+
     .first_section {
         background-size: cover !important;
+
         .first_section-box {
             padding: 80px 40 60px 0px !important;
+
             .text_h {
                 font-size: 26px !important;
                 margin-bottom: 10px !important;
             }
+
             .btn {
                 font-size: 12px;
                 padding: 12px 26px;
             }
+        }
+    }
+
+    .categories {
+
+        .categories_boxes {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+
+            .categorie-box {
+                width: 280px !important;
+                text-align: center;
+                margin-right: 32px;
+
+                img {
+                    width: 280px;
+                }
+            }
+        }
+
+    }
+
+    .sale {
+        .sale_boxes {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+        }
+    }
+
+    .discount {
+
+        .container {
+ 
+         h2 {
+             font-size: 18px !important;
+         }
+ 
         }
     }
 }
