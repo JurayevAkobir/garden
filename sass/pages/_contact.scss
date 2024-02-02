@@ -12,8 +12,15 @@
 
                 .box {
                     display: flex !important;
+                    align-items: center !important;
+
                 }
-                
+
+                .box_ {
+                    display: flex !important;
+                    align-items: center !important;
+                }
+
                 margin: 40px 0;
                 display: flex;
                 align-items: center;
@@ -89,6 +96,7 @@
         // * Shopping cart
         .shopping_cart {
             margin-bottom: 80px;
+
             .sale_product {
                 margin-top: 188px;
                 display: flex;
@@ -205,128 +213,130 @@
                 margin-top: 40px;
                 display: flex;
                 justify-content: space-between;
+
                 .sale_boxes-two {
 
                     .sale_box-two {
                         margin-bottom: 16px;
                         display: flex;
-                        align-items: center;    
+                        align-items: center;
                         justify-content: space-between;
                         border-radius: var(--radius-big, 12px);
                         border: 1px solid var(--grey-divider, #DDD);
-    
+
                         .tool {
                             border-top-left-radius: 12px;
                             border-bottom-left-radius: 12px;
                             border-right: 1px solid var(--grey-divider, #DDD);
                         }
-    
+
                         .sale_texts {
                             width: 548px;
                             margin: 0;
                             padding: 32px 32px 32px 0;
 
-                                .title_x {
-                                    margin-bottom: 32px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-        
-                                    h4 {
-                                        margin-bottom: 0;
-                                    }
-                                }
-        
-                                h4 {
+                            .title_x {
+                                margin-bottom: 32px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
 
-                                    margin-bottom: 32px;
-                                    color: variables.$black;
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                    font-size: 20px;
-                                    font-weight: 500;
-                                    line-height: 130%; 
+                                h4 {
+                                    margin-bottom: 0;
                                 }
-        
-                                h2 {
-                                    margin-left: 32px;
-                                    margin-right: 16px;
-                                    color: variables.$black;
-                                    font-size: 40px;
-                                    font-weight: 600;
-                                    line-height: 110%;
-                                }
-        
-                                del {
-                                    margin-top: 20px;
-                                    color: var(--txt-grey, #8B8B8B);
-                                    font-size: 20px;
-                                    font-weight: 500;
-                                    line-height: 130%; 
-                                }
-        
-                                .btn_p {
-                                    top: 15%;
-                                    position: absolute;
-                                    padding: 4px 8px;
-                                }
-        
-                                .plus_minus-box {
-                                    margin: 32px 0 0 0;
+                            }
+
+                            h4 {
+
+                                margin-bottom: 32px;
+                                color: variables.$black;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 130%;
+                            }
+
+                            h2 {
+                                margin-left: 32px;
+                                margin-right: 16px;
+                                color: variables.$black;
+                                font-size: 40px;
+                                font-weight: 600;
+                                line-height: 110%;
+                            }
+
+                            del {
+                                margin-top: 20px;
+                                color: var(--txt-grey, #8B8B8B);
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 130%;
+                            }
+
+                            .btn_p {
+                                top: 15%;
+                                position: absolute;
+                                padding: 4px 8px;
+                            }
+
+                            .plus_minus-box {
+                                margin: 32px 0 0 0;
+                                display: flex;
+                                align-items: center;
+
+                                .plus_minus {
                                     display: flex;
                                     align-items: center;
-        
-                                    .plus_minus {
-                                        display: flex;
-                                        align-items: center;
-        
-        
-                                        .div_p {
-                                            padding: 10px 0;
-                                            border-top: 1px solid var(--grey-divider, #DDD);
-                                            border-bottom: 1px solid var(--grey-divider, #DDD);
-        
-                                            p {
-                                                margin: 0 38px;
-                                                color: variables.$black;
-                                                text-align: center;
-                                                font-size: 20px;
-                                                font-weight: 600;
-                                                line-height: 130%;
-                                            }
+
+
+                                    .div_p {
+                                        padding: 10px 0;
+                                        border-top: 1px solid var(--grey-divider, #DDD);
+                                        border-bottom: 1px solid var(--grey-divider, #DDD);
+
+                                        p {
+                                            margin: 0 38px;
+                                            color: variables.$black;
+                                            text-align: center;
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            line-height: 130%;
                                         }
-        
-        
                                     }
-        
-                                    .btn {
-                                        padding: 10px 116px;
-                                        margin-left: 32px;
-                                    }
+
+
                                 }
-        
-                                h5 {
-                                    color: variables.$black;
-                                    font-size: 20px;
-                                    font-weight: 600;
-                                    line-height: 130%;
+
+                                .btn {
+                                    padding: 10px 116px;
+                                    margin-left: 32px;
                                 }
-        
-                                p {
-                                    margin: 16px 0;
-                                    color: variables.$black;
-                                    font-size: 16px;
-                                    font-weight: 400;
-                                    line-height: 130%;
-                                }
-        
-                                a {
-                                    color: variables.$black;
-                                    font-size: 16px;
-                                    font-weight: 500;
-                                    line-height: 130%;
-                                }
+                            }
+
+                            h5 {
+                                color: variables.$black;
+                                font-size: 20px;
+                                font-weight: 600;
+                                line-height: 130%;
+                            }
+
+                            p {
+                                margin: 16px 0;
+                                color: variables.$black;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 130%;
+                            }
+
+                            a {
+                                color: variables.$black;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 130%;
+                            }
                         }
+
                         .sale_texts-two {
                             margin-left: 32px;
                         }
@@ -387,8 +397,8 @@
                     }
                 }
 
-               
-              
+
+
             }
 
         }
@@ -405,12 +415,65 @@
         .sale_form {
             flex-direction: column;
             align-items: start !important;
+
             .box {
                 margin-bottom: 16px;
-            display: block !important;
-            align-items: center;
+                display: block !important;
+                align-items: center;
 
             }
-        }   
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .sale {
+        .title {
+            .title_h {
+                font-size: 44px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .sale {
+        .title {
+            .title_h {
+                font-size: 25px !important;
+            }
+        }
+
+        .sale_form {
+            .box {
+                margin-bottom: 16px !important;
+                display: flex;
+                flex-direction: column;
+                align-items: start !important;
+                justify-content: start !important;
+
+                .h_four {
+                    display: none;
+                }
+            }
+
+            .box_ {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sale {
+        .sale_form {
+            .box {
+                .input_box {
+                    input {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
     }
 }
