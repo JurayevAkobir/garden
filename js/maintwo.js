@@ -37,8 +37,8 @@ const saleProductsTwo = [
 
 const saleBoxesTwo = document.querySelector(".sale_boxes-js")
 
-    saleProductsTwo.forEach((saleBoxTwo, indx) => {
-        saleBoxesTwo.innerHTML += `
+saleProductsTwo.forEach((saleBoxTwo, indx) => {
+    saleBoxesTwo.innerHTML += `
         <div class="sale_box">
              <img src="${saleBoxTwo.img}" alt="sale_4">
             <div class="sale_texts">
@@ -50,51 +50,55 @@ const saleBoxesTwo = document.querySelector(".sale_boxes-js")
             <button class="btn btn_hover">${saleBoxTwo.btn}</button>
         </div>
         `
-    });
+});
 
 
-    const saleProductsTwoBox = [
-        {
-            name: "Bayonet shovel",
-            newPrice: "$180",
-            btn: "Add to cart",
-            img: "./images/tool_3.png"
-        },
-        {
-            name: "Garden pitchfork",
-            newPrice: "$179",
-            btn: "Add to cart",
-            img: "./images/tool_4.png"
-        },
-        {
-            name: "Barbell",
-            newPrice: "$12",
-            btn: "Add to cart",
-            img: "./images/tool_5.png"
-        },
-        {
-            name: "Souvenir thermometer",
-            newPrice: "$98",
-            btn: "Add to cart",
-            discount: "-17%",
-            img: "./images/tool_6.png"
-        }
-    ];
-    
-    
-    const saleBoxesTwoBox = document.querySelector(".sale_boxes_js")
-    
-        saleProductsTwoBox.forEach((saleBoxtwo, indx) => {
-            saleBoxesTwoBox.innerHTML += `
+const saleProductsTwoBox = [
+    {
+        name: "Bayonet shovel",
+        newPrice: "$180",
+        btn: "Add to cart",
+        img: "./images/tool_3.png"
+    },
+    {
+        name: "Garden pitchfork",
+        newPrice: "$179",
+        btn: "Add to cart",
+        img: "./images/tool_4.png"
+    },
+    {
+        name: "Barbell",
+        newPrice: "$12",
+        btn: "Add to cart",
+        img: "./images/tool_5.png"
+    },
+    {
+        name: "Souvenir thermometer",
+        newPrice: "$98",
+        btn: "Add to cart",
+        discount: "-17%",
+        img: "./images/tool_6.png"
+    }
+];
+
+
+const saleBoxesTwoBox = document.querySelector(".sale_boxes_js")
+
+saleProductsTwoBox.forEach((saleBoxtwo, indx) => {
+    saleBoxesTwoBox.innerHTML += `
             <div class="sale_box">
                  <img src="${saleBoxtwo.img}" alt="sale_4">
                 <div class="sale_texts">
                     <h4>${saleBoxtwo.name}</h4>
                     <h2>${saleBoxtwo.newPrice}</h2>
                 </div>
-                <button class="btn btn_position">${saleBoxtwo.discount}</button>
+                ${saleBoxtwo.discount ?
+            ` <button class="btn btn_position">${saleBoxtwo.discount}</button> `
+            : ''
+        }
                 <button class="btn btn_hover">${saleBoxtwo.btn}</button>
             </div>
             `
-        });
-    
+});
+
+

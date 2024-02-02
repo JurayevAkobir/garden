@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Core style */
 html {
   box-sizing: border-box;
@@ -546,16 +547,58 @@ body {
   display: flex !important;
   align-items: center !important;
 }
-.wrapper .main .sale .sale_form .box_ {
-  display: flex !important;
-  align-items: center !important;
-}
-.wrapper .main .sale .sale_form h4 {
-  margin-right: 16px;
-  color: #282828;
+.wrapper .main .sale .sale_form .box h4 {
+  color: rgb(40, 40, 40);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
+  margin-right: 16px;
+}
+.wrapper .main .sale .sale_form .box label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 62px;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.wrapper .main .sale .sale_form .box label:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  position: absolute;
+  top: -20%;
+  right: -28%;
+  bottom: 1px;
+  background: white;
+  box-sizing: border-box;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 6px;
+}
+.wrapper .main .sale .sale_form .box input[type=checkbox] {
+  display: none;
+}
+.wrapper .main .sale .sale_form .box .checkbox label:before {
+  border-radius: 6px;
+}
+.wrapper .main .sale .sale_form .box input[type=checkbox]:checked + label:before {
+  content: "✓";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 12px;
+  padding-top: 10px;
+  background: rgb(51, 153, 51);
+}
+.wrapper .main .sale .sale_form .box_ {
+  display: flex !important;
+  align-items: center !important;
 }
 .wrapper .main .sale .sale_form input {
   margin-right: 16px;
@@ -563,21 +606,16 @@ body {
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #DDD);
 }
-.wrapper .main .sale .sale_form .check {
-  border-radius: var(--radius-small, 6px);
-  border: 1px solid var(--grey-divider, #DDD);
-}
 .wrapper .main .sale .sale_form select {
   padding: 8px 16px;
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #DDD);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 6px;
   color: #282828;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 126%;
-  /* 20.16px */
 }
 .wrapper .main .sale .sale_boxes .sale_box {
   transition: all 0.9s linear;
@@ -848,15 +886,34 @@ body {
   margin-right: 0 !important;
 }
 
+@media screen and (max-width: 1230px) {
+  .sale .sale_form {
+    align-items: start !important;
+  }
+  .sale .sale_form .box {
+    padding-bottom: 0 !important;
+  }
+  .sale .sale_form .box .checkbox label {
+    padding-left: 0 !important;
+  }
+  .sale .sale_form .box .h_four {
+    display: none;
+  }
+}
 @media screen and (max-width: 1160px) {
   .sale .sale_form {
     flex-direction: column;
     align-items: start !important;
   }
   .sale .sale_form .box {
+    padding: 0 !important;
     margin-bottom: 16px;
     display: block !important;
     align-items: center;
+  }
+  .sale .sale_form .box .checkbox label {
+    padding-left: 0 !important;
+    padding-right: 16px;
   }
 }
 @media screen and (max-width: 840px) {
@@ -868,22 +925,17 @@ body {
   .sale .title .title_h {
     font-size: 25px !important;
   }
-  .sale .sale_form .box {
-    margin-bottom: 16px !important;
-    display: flex;
-    flex-direction: column;
-    align-items: start !important;
-    justify-content: start !important;
-  }
-  .sale .sale_form .box .h_four {
-    display: none;
-  }
-  .sale .sale_form .box_ {
-    margin-top: 16px;
-  }
 }
 @media screen and (max-width: 600px) {
   .sale .sale_form .box .input_box input {
     margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sale .sale_form .box {
+    flex-direction: column;
+  }
+  .sale .sale_form .box .checkbox {
+    margin-bottom: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

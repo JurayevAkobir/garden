@@ -9,28 +9,80 @@
         .sale {
 
             .sale_form {
+                margin: 40px 0;
+                display: flex;
+                align-items: center;
 
                 .box {
                     display: flex !important;
                     align-items: center !important;
+
+                    h4 {
+                        color: rgb(40, 40, 40);
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 130%;
+                        margin-right: 16px;
+                    }
+
+
+                    label {
+                        display: inline-block;
+                        cursor: pointer;
+                        position: relative;
+                        padding-left: 25px;
+                        margin-right: 62px;
+
+                        color: rgb(40, 40, 40);
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 130%;
+                    }
+
+
+                    label:before {
+                        content: "";
+                        display: inline-block;
+                        width: 36px;
+                        height: 36px;
+                        margin-right: 10px;
+                        position: absolute;
+                        top: -20%;
+                        right: -28%;
+                        bottom: 1px;
+                        background: white;
+
+                        box-sizing: border-box;
+                        border: 1px solid rgb(221, 221, 221);
+                        border-radius: 6px;
+
+                    }
+
+                    input[type=checkbox] {
+                        display: none;
+                    }
+
+                    .checkbox label:before {
+                        border-radius: 6px;
+                    }
+
+                    input[type=checkbox]:checked+label:before {
+                        content: "\2713";
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+                        font-size: 24px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 12px;
+                        padding-top: 10px;
+                        background: rgb(51, 153, 51);
+                    }
 
                 }
 
                 .box_ {
                     display: flex !important;
                     align-items: center !important;
-                }
 
-                margin: 40px 0;
-                display: flex;
-                align-items: center;
-
-                h4 {
-                    margin-right: 16px;
-                    color: variables.$black;
-                    font-size: 20px;
-                    font-weight: 600;
-                    line-height: 130%;
                 }
 
                 input {
@@ -40,23 +92,19 @@
                     border: 1px solid var(--grey-divider, #DDD);
                 }
 
-                .check {
-                    border-radius: var(--radius-small, 6px);
-                    border: 1px solid var(--grey-divider, #DDD);
-                }
-
                 select {
                     padding: 8px 16px;
                     border-radius: var(--radius-small, 6px);
                     border: 1px solid var(--grey-divider, #DDD);
 
+                    border: 1px solid rgb(221, 221, 221);
+                    border-radius: 6px;
+
+
                     color: variables.$black;
-                    font-family: Montserrat;
                     font-size: 16px;
-                    font-style: normal;
                     font-weight: 500;
                     line-height: 126%;
-                    /* 20.16px */
                 }
             }
 
@@ -410,6 +458,29 @@
 
 }
 
+@media screen and (max-width: 1230px) {
+    .sale {
+
+        .sale_form {
+            align-items: start !important;
+
+            .box {
+                padding-bottom: 0 !important;
+                .checkbox {
+                    label {
+                        padding-left: 0 !important;
+                    }
+                }
+                .h_four {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+}
+
 @media screen and (max-width: 1160px) {
     .sale {
         .sale_form {
@@ -417,12 +488,21 @@
             align-items: start !important;
 
             .box {
+                padding: 0 !important;
                 margin-bottom: 16px;
                 display: block !important;
                 align-items: center;
 
+                .checkbox {
+                    label {
+                        padding-left: 0 !important;
+                        padding-right: 16px;
+                    }
+                }
+
             }
         }
+
     }
 }
 
@@ -444,23 +524,7 @@
             }
         }
 
-        .sale_form {
-            .box {
-                margin-bottom: 16px !important;
-                display: flex;
-                flex-direction: column;
-                align-items: start !important;
-                justify-content: start !important;
 
-                .h_four {
-                    display: none;
-                }
-            }
-
-            .box_ {
-                margin-top: 16px;
-            }
-        }
     }
 }
 
@@ -473,6 +537,20 @@
                         margin-bottom: 8px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sale {
+        .sale_form {
+            .box {
+               flex-direction: column;
+
+               .checkbox {
+                margin-bottom: 16px;
+               }
             }
         }
     }
