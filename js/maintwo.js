@@ -76,6 +76,7 @@ const saleBoxesTwo = document.querySelector(".sale_boxes-js")
             name: "Souvenir thermometer",
             newPrice: "$98",
             btn: "Add to cart",
+            discount: "-17%",
             img: "./images/tool_6.png"
         }
     ];
@@ -91,6 +92,7 @@ const saleBoxesTwo = document.querySelector(".sale_boxes-js")
                     <h4>${saleBoxtwo.name}</h4>
                     <h2>${saleBoxtwo.newPrice}</h2>
                 </div>
+                <button class="btn btn_position">${saleBoxtwo.discount}</button>
                 <button class="btn btn_hover">${saleBoxtwo.btn}</button>
             </div>
             `
