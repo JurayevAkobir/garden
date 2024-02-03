@@ -461,7 +461,7 @@
     }
 
     .btn {
-        padding: 10px 116px;
+        padding: 16px 116px ;
         margin-left: 32px;
     }
 }
@@ -687,7 +687,7 @@
                     flex-direction: column !important;
 
                     .btn {
-                        padding: 16px 0;
+                        padding: 16px 116px;
                         margin-top: 16px;
                         margin-left: 0;
                     }
@@ -711,6 +711,25 @@
                 .input_box {
                     input {
                         margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .shopping_cart {
+        .sale_product {
+            flex-direction: column;
+            align-items: start !important;
+
+            .sale_texts {
+
+                .plus_minus-box {
+                    flex-direction: column !important;
+
+                    .btn {
+                        padding: 16px 95px;
+                        font-size: 14px;
                     }
                 }
             }
