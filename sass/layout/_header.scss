@@ -36,6 +36,16 @@
                             line-height: 130%;
                         }
 
+                        .header_link:hover {
+                            margin: 0 16px 0 16px;
+                            color: rgb(51, 153, 51);
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 130%;
+                            letter-spacing: 0%;
+                            text-align: left;
+                        }
+
 
                     }
 
@@ -98,7 +108,7 @@
                     padding-bottom: 8px;
 
                     .header_link {
-                    font-size: 16px ;
+                    font-size: 16px !important;
                     }
                 }
             }
