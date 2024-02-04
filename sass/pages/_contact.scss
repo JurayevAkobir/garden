@@ -16,6 +16,14 @@
                     display: flex !important;
                     align-items: center !important;
 
+                    .input_box {
+                        display: flex;
+
+                        input {
+                            width: 112px;
+                        }
+                    }
+
                     h4 {
                         color: rgb(40, 40, 40);
                         font-size: 20px;
@@ -30,7 +38,7 @@
                         cursor: pointer;
                         position: relative;
                         padding-left: 25px;
-                        margin-right: 62px;
+                        margin-right: 92px;
 
                         color: rgb(40, 40, 40);
                         font-size: 20px;
@@ -178,6 +186,10 @@
                 line-height: 110%;
             }
 
+            .h_two {
+                padding-top: 43px;
+            }
+
             del {
                 margin-right: 16px;
                 color: var(--txt-grey, #8B8B8B);
@@ -215,6 +227,15 @@
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 130%;
+                position: relative;
+
+                .line_img_4 {
+                    position: absolute;
+                    bottom: 0;
+                    width: 89px;
+                    height: 1px;
+                    background-color: black;
+                }
             }
         }
     }
@@ -257,7 +278,6 @@
                     }
 
                     h4 {
-
                         margin-bottom: 32px;
                         color: variables.$black;
                         overflow: hidden;
@@ -267,21 +287,25 @@
                         line-height: 130%;
                     }
 
-                    h2 {
-                        margin-left: 32px;
-                        margin-right: 16px;
-                        color: variables.$black;
-                        font-size: 40px;
-                        font-weight: 600;
-                        line-height: 110%;
-                    }
+                    .small_box {
+                        display: flex;
 
-                    del {
-                        margin-top: 20px;
-                        color: var(--txt-grey, #8B8B8B);
-                        font-size: 20px;
-                        font-weight: 500;
-                        line-height: 130%;
+                        h2 {
+                            margin-left: 32px;
+                            margin-right: 16px;
+                            color: variables.$black;
+                            font-size: 40px;
+                            font-weight: 600;
+                            line-height: 110%;
+                        }
+
+                        del {
+                            margin-top: 20px;
+                            color: var(--txt-grey, #8B8B8B);
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 130%;
+                        }
                     }
 
                     .btn_p {
@@ -357,7 +381,7 @@
             margin-left: 32px;
             padding: 32px;
             width: 548px;
-            height: 587px;
+            height: 597px;
             border-radius: var(--radius-big, 12px);
             background: var(--light-grey, #F1F3F4);
 
@@ -420,6 +444,8 @@
     display: flex;
 
     .plus_minus {
+        width: 200px;
+        height: 55px;
         display: flex;
         align-items: center;
         border: 1px solid var(--grey-divider, #DDD) !important;
@@ -432,8 +458,6 @@
             justify-content: center;
             border-radius: 8px;
             margin: 0;
-            width: 100%;
-            height: 100%;
             padding: 14px 16px;
 
         }
@@ -556,9 +580,12 @@
                     }
                 }
             }
+
         }
 
         .sale_form-box {
+            width: 63% !important;
+            height: 570px !important;
             margin-top: 16px;
             margin-left: 0 !important;
         }
@@ -579,28 +606,6 @@
                 }
             }
         }
-    }
-
-    .sale {
-        .sale_form {
-            align-items: start !important;
-
-            .box {
-                padding-bottom: 0 !important;
-
-                .checkbox {
-                    label {
-                        padding-left: 0 !important;
-                    }
-                }
-
-                .h_four {
-                    display: none;
-                }
-            }
-
-        }
-
     }
 }
 
@@ -662,33 +667,52 @@
 
                 .sale_box-two {
                     width: 100% !important;
+                    height: 180px;
 
                     .sale_texts {
                         .title_x {
                             width: 100%;
+                            margin-bottom: 0 !important;
+
+                            h4 {
+                                font-size: 14px;
+                            }
                         }
 
                         .plus_minus-box {
                             flex-direction: column !important;
                             align-items: start !important;
+                            margin-top: 10px;
 
-                            .btn_two {
-                                width: 100% !important;
-                                height: 100% !important;
-                                padding: 10px;
-                            }
+                            .plus_minus {
+                                height: 35px;
 
-                            .div_p {
-                                p {
-                                    margin: 0 16px !important;
+                                .btn_two {
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                    padding: 5px;
+                                }
+
+                                .div_p {
+                                    p {
+                                        margin: 0 16px !important;
+                                    }
                                 }
                             }
 
                             .small_box {
                                 margin-top: 16px;
-                                display: flex;
+                                // flex-direction: column;
+
+                                del {
+                                    margin-left: 0;
+                                    font-size: 12px;
+                                    margin-top: 0;
+                                }
 
                                 h2 {
+                                    margin-right: 4px;
+                                    font-size: 24px;
                                     margin-left: 0 !important;
                                 }
                             }
@@ -705,10 +729,30 @@
     .sale {
         .title {
             .title_h {
+                margin-bottom: 0;
                 font-size: 25px !important;
             }
         }
 
+        .sale_form {
+            .box {
+                flex-direction: column;
+
+                .h_four {
+                    padding-right: 185px !important;
+                    margin-bottom: 6px;
+                }
+
+                .checkbox {
+                    margin-bottom: 16px;
+
+                    label {
+                        padding-top: 3px;
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
 
     }
 
@@ -743,29 +787,27 @@
                 width: 400px !important;
             }
         }
+
+        .sale_form-box {
+            width: 75% !important;
+            height: 470px !important;
+
+            h4 {
+                font-size: 24px !important;
+            }
+
+            h3 {
+                font-size: 20px !important;
+            }
+
+            .h_uch {
+            }
+        }
     }
 
 }
 
 @media screen and (max-width: 600px) {
-    .sale {
-        .sale_form {
-            .box {
-                flex-direction: column;
-
-                .checkbox {
-                    margin-bottom: 16px;
-                }
-
-                .input_box {
-                    input {
-                        margin-bottom: 8px;
-                    }
-                }
-            }
-        }
-    }
-
     .shopping_cart {
         .sale_product {
             flex-direction: column;
@@ -783,5 +825,110 @@
                 }
             }
         }
+
+        .sale_big-boxes {
+            .sale_boxes-two {
+                width: 100% !important;
+
+                .sale_box-two {
+                    width: 100% !important;
+                    height: 180px;
+
+                    .sale_texts {
+                        .title_x {
+                            width: 100%;
+                            margin-bottom: 0 !important;
+
+                            h4 {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .plus_minus-box {
+                            flex-direction: column !important;
+                            align-items: start !important;
+                            margin-top: 10px;
+
+                            .plus_minus {
+                                height: 35px;
+
+                                .btn_two {
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                    padding: 5px;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+@media screen and (max-width: 480px) {
+    .shopping_cart {
+
+        .sale_big-boxes {
+            .sale_boxes-two {
+                width: 100% !important;
+
+                .sale_box-two {
+                    width: 100% !important;
+                    height: 130px;
+
+                    .tool {
+                        height: 130px;
+                    }
+
+                    .sale_texts {
+                        margin-left: 12px !important;
+
+                        .title_x {
+                            width: 100%;
+                            margin-bottom: 0 !important;
+
+                            h4 {
+                                font-size: 10px;
+                            }
+                        }
+
+                        .plus_minus-box {
+                            flex-direction: column !important;
+                            align-items: start !important;
+                            margin-top: 10px;
+
+                            .plus_minus {
+                                height: 30px;
+
+                                .btn_two {
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                    padding: 5px;
+
+                                    .minus,
+                                    .plus {
+                                        width: 18px;
+                                    }
+                                }
+
+                                .div_p {
+                                    padding: 0;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .sale_form-box {
+            width: 100% !important;
+        }
+    }
+
 }

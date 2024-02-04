@@ -27,7 +27,6 @@ const saleProductsTwo = [
     {
         name: "Sickle-shaped hacksaw",
         newPrice: "$55",
-        discount: "-17%",
         btn: "Add to cart",
         img: "./images/tool_2.png"
     }
@@ -48,7 +47,10 @@ saleProductsTwo.forEach((saleBoxTwo, indx) => {
                     : ''
                 }</del>
             </div>
-            <button class="btn btn_position">${saleBoxTwo.discount}</button>
+            <button>${saleBoxTwo.discount
+                ? ` <button class="btn btn_position">${saleBoxTwo.discount}</button> `
+                : ''
+            }</button>
             <button class="btn btn_hover">${saleBoxTwo.btn}</button>
         </div>
         `
@@ -79,7 +81,7 @@ const saleProductsTwoBox = [
         newPrice: "$98",
         oldPrice: "$120",
         btn: "Add to cart",
-        discount: "-17%",
+        discount: "-18%",
         img: "./images/tool_6.png"
     }
 ];

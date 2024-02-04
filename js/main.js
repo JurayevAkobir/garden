@@ -36,7 +36,7 @@ categories.forEach((item, indx) => {
 // ! Sale start
 const saleProducts = [
     {
-        name: "Decorative forged bridge",
+        name: "Decorative forged ...",
         oldPrice: "$1000",
         newPrice: "$500",
         discount: "-50%",
@@ -50,17 +50,17 @@ const saleProducts = [
         img: "./images/sale_2.png"
     },
     {
-        name: "Decorative forged bridge",
+        name: "Aquarium lock",
         oldPrice: "$200",
         newPrice: "$150",
         discount: "-25%",
         img: "./images/sale_3.png"
     },
     {
-        name: "Decorative forged bridge",
+        name: "Secateurs",
         oldPrice: "$240",
         newPrice: "$199",
-        discount: "-17%",
+        discount: "-50%",
         img: "./images/sale_4.png"
     }
 ];
@@ -73,7 +73,7 @@ saleProducts.forEach((saleBox, indx) => {
 		<img src="${saleBox.img}" alt="sale_1">
 		<div class="sale_texts">
 			<h4>${saleBox.name}</h4>
-			<h2>${saleBox.newPrice}</h2>
+			<h2 class="h_two">${saleBox.newPrice}</h2>
 			<del>${saleBox.oldPrice}</del>
 		</div>
 		<button class="btn btn_position">${saleBox.discount}</button>

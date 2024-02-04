@@ -83,16 +83,26 @@
 
             .line_img {
                 position: absolute;
-                right: 10.6%;
+                right: 143px;
                 width: 832px;
                 height: 1px;
-                flex-grow: 1;
-                margin: 0px 0px;
                 border: 1px solid rgb(221, 221, 221);
             }
 
             .line_img_2 {
+                width: 700px;
+                position: absolute;
+                right: 170px;
+                height: 1px;
+                border: 1px solid rgb(221, 221, 221);
+            }
+
+            .line_img_3 {
                 width: 1093px;
+                position: absolute;
+                right: 110px;
+                height: 1px;
+                border: 1px solid rgb(221, 221, 221);
             }
         }
 
