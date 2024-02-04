@@ -27,7 +27,6 @@ const saleProductsTwo = [
     {
         name: "Sickle-shaped hacksaw",
         newPrice: "$55",
-        oldPrice: "$14",
         discount: "-17%",
         btn: "Add to cart",
         img: "./images/tool_2.png"
@@ -44,7 +43,10 @@ saleProductsTwo.forEach((saleBoxTwo, indx) => {
             <div class="sale_texts">
                 <h4>${saleBoxTwo.name}</h4>
                 <h2>${saleBoxTwo.newPrice}</h2>
-                <del>${saleBoxTwo.oldPrice}</del>
+                <del> ${saleBoxTwo.oldPrice
+                    ? ` <del>${saleBoxTwo.oldPrice}</del> `
+                    : ''
+                }</del>
             </div>
             <button class="btn btn_position">${saleBoxTwo.discount}</button>
             <button class="btn btn_hover">${saleBoxTwo.btn}</button>
@@ -75,6 +77,7 @@ const saleProductsTwoBox = [
     {
         name: "Souvenir thermometer",
         newPrice: "$98",
+        oldPrice: "$120",
         btn: "Add to cart",
         discount: "-17%",
         img: "./images/tool_6.png"
@@ -91,9 +94,14 @@ saleProductsTwoBox.forEach((saleBoxtwo, indx) => {
                 <div class="sale_texts">
                     <h4>${saleBoxtwo.name}</h4>
                     <h2>${saleBoxtwo.newPrice}</h2>
+                    ${saleBoxtwo.oldPrice
+                        ? ` <del>${saleBoxtwo.oldPrice}</del> `
+                        : ''
+                    }
+                    
                 </div>
-                ${saleBoxtwo.discount ?
-            ` <button class="btn btn_position">${saleBoxtwo.discount}</button> `
+                ${saleBoxtwo.discount
+            ? ` <button class="btn btn_position">${saleBoxtwo.discount}</button> `
             : ''
         }
                 <button class="btn btn_hover">${saleBoxtwo.btn}</button>

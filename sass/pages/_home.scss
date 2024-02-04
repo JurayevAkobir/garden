@@ -82,9 +82,13 @@
             }
 
             .line_img {
-                right: 9.8%;
                 position: absolute;
-                margin: 0;
+                right: 10.6%;
+                width: 832px;
+                height: 1px;
+                flex-grow: 1;
+                margin: 0px 0px;
+                border: 1px solid rgb(221, 221, 221);
             }
 
             .line_img_2 {
@@ -218,6 +222,7 @@
             margin-right: 0 !important;
         }
     }
+
     //  * Main end
 
     // * Footer section start
@@ -256,6 +261,7 @@
             }
         }
     }
+
     // * Footer section end
 }
 
