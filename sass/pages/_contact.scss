@@ -443,9 +443,13 @@
     margin: 32px 0;
     display: flex;
 
-    .plus_minus {
+    .plus_minus-two {
         width: 200px;
         height: 55px;
+    }
+
+    .plus_minus {
+        
         display: flex;
         align-items: center;
         border: 1px solid var(--grey-divider, #DDD) !important;

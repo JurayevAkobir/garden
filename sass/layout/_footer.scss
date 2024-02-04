@@ -1,1 +1,42 @@
 @use "../abstracts/variables";
+
+
+.wrapper {
+// * Footer section start
+.footer {
+
+    h1 {
+        color: variables.$black;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 110%;
+        margin-bottom: 40px;
+    }
+
+    .end_time {
+        margin-bottom: 32px;
+        width: 100%;
+        padding: 32px;
+        border-radius: var(--radius-big, 12px);
+        background: var(--light-grey, #F1F3F4);
+
+        h2 {
+            color: variables.$black;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 110%;
+        }
+    }
+
+    .map-box {
+        margin-bottom: 80px;
+
+        iframe {
+            border: transparent;
+            border-radius: 12px;
+
+        }
+    }
+}
+// * Footer section end
+}
