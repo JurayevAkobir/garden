@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./libs/normalize.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./css/main.css">
-</head>
+</head> 
 
 <body>
 
@@ -80,17 +80,18 @@
                                 <div class="sale_texts sale_texts-two">
                                     <div class="title_x">
                                         <h4>Secateurs</h4>
-                                        <img src="./images/icons/x.svg" alt="x">
+                                        
+                                        <button class="sale_box_close-btn"><img src="./images/icons/x.svg" alt="x"></button>
                                     </div>
                                     <div class="plus_minus-box">
                                         <div class="plus_minus">
-                                            <button class="btn_two">
+                                            <button class="btn_two minus_btn">
                                                 <img class="minus" src="images/icons/minus.svg" alt="minus">
                                             </button>
                                             <div class="div_p">
-                                                <p>1</p>
+                                                <p class="value">0</p>
                                             </div>
-                                            <button class="btn_two">
+                                            <button class="btn_two plus_btn">
                                                 <img class="plus" src="images/icons/plus.svg" alt="minus">
                                             </button>
                                         </div>
@@ -111,13 +112,13 @@
                                     </div>
                                     <div class="plus_minus-box">
                                         <div class="plus_minus">
-                                            <button class="btn_two">
+                                            <button class="btn_two minus_btn">
                                                 <img class="minus" src="images/icons/minus.svg" alt="minus">
                                             </button>
                                             <div class="div_p">
-                                                <p>1</p>
+                                                <p class="value">0</p>
                                             </div>
-                                            <button class="btn_two">
+                                            <button class="btn_two plus_btn">
                                                 <img class="plus" src="images/icons/plus.svg" alt="minus">
                                             </button>
                                         </div>
@@ -138,13 +139,13 @@
                                     </div>
                                     <div class="plus_minus-box">
                                         <div class="plus_minus">
-                                            <button class="btn_two">
+                                            <button class="btn_two minus_btn">
                                                 <img class="minus" src="images/icons/minus.svg" alt="minus">
                                             </button>
                                             <div class="div_p">
-                                                <p>2</p>
+                                                <p class="value">0</p>
                                             </div>
-                                            <button class="btn_two">
+                                            <button class="btn_two plus_btn">
                                                 <img class="plus" src="images/icons/plus.svg" alt="minus">
                                             </button>
                                         </div>
@@ -194,14 +195,14 @@
     <!-- ! Modal -->
     <div class="modal hide">
         <div class="modal-content">
-            <div class="ttitle_close">
+            <div class="title_close">
                 <h4>Congratulations!</h4>
                 <button class="close__btn">
                     <img src="./images/icons/x_white.svg" alt="close">
                 </button>
             </div>
             <p>Your order has been successfully placed on the website.</p>
-            <p>A manager will contact you shortly to confirm your order.</p>
+            <p class="last-child">A manager will contact you shortly to confirm your order.</p>
         </div>
     </div>
 
@@ -212,6 +213,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/maintwo.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/plus-minus.js"></script>
 
 </body>
 

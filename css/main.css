@@ -397,8 +397,12 @@ body {
   position: absolute;
   padding: 4px 8px;
 }
-.wrapper .main .last-child {
+
+.last-child {
   margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 @media screen and (max-width: 1380px) {
@@ -952,6 +956,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
+  width: 10px;
 }
 .plus_minus-box .btn {
   padding: 16px 116px;
@@ -979,7 +984,6 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .modal .modal-content {
-  /* pop up */
   position: relative;
   top: 50%;
   left: 50%;
@@ -990,13 +994,13 @@ body {
   border-radius: 12px;
   background: rgb(51, 153, 51);
 }
-.modal .modal-content .ttitle_close {
+.modal .modal-content .title_close {
   margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.modal .modal-content .ttitle_close h4 {
+.modal .modal-content .title_close h4 {
   color: rgb(255, 255, 255);
   font-size: 40px;
   font-weight: 600;
@@ -1152,7 +1156,9 @@ body {
     flex-direction: column !important;
   }
   .shopping_cart .sale_product .sale_texts .plus_minus-box .btn {
-    padding: 16px 116px;
+    padding: 16px 100px;
+    width: 285px;
+    font-size: 14px;
     margin-top: 16px;
     margin-left: 0;
   }
@@ -1177,10 +1183,6 @@ body {
   }
   .shopping_cart .sale_product .sale_texts .plus_minus-box {
     flex-direction: column !important;
-  }
-  .shopping_cart .sale_product .sale_texts .plus_minus-box .btn {
-    padding: 16px 95px;
-    font-size: 14px;
   }
   .shopping_cart .sale_big-boxes .sale_boxes-two {
     width: 100% !important;
@@ -1208,6 +1210,22 @@ body {
     width: 100% !important;
     height: 100% !important;
     padding: 5px;
+  }
+  .modal .modal-content {
+    max-width: 90%;
+  }
+  .modal .modal-content .title_close {
+    margin-bottom: 12px !important;
+  }
+  .modal .modal-content .title_close h4 {
+    font-size: 20px;
+  }
+  .modal .modal-content .title_close .close__btn img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .modal .modal-content p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1253,5 +1271,18 @@ body {
   }
   .shopping_cart .sale_form-box {
     width: 100% !important;
+  }
+  .modal .modal-content .title_close {
+    margin-bottom: 12px !important;
+  }
+  .modal .modal-content .title_close h4 {
+    font-size: 18px !important;
+  }
+  .modal .modal-content .title_close .close__btn img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .modal .modal-content p {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=main.css.map */

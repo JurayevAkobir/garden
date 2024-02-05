@@ -1,3 +1,5 @@
+"use strict"
+
 // ! Sale2 start
 const saleProductsTwo = [
     {

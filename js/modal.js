@@ -1,3 +1,4 @@
+
 const openModalBtn = document.querySelector(".open-modal__btn"),
       modal = document.querySelector(".modal");
       modalContent = document.querySelector(".modal-content");

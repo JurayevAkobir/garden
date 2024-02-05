@@ -1,5 +1,7 @@
 @use "../abstracts/variables";
 
+
+// * wrapper
 .wrapper {
 
     .main {
@@ -449,7 +451,7 @@
     }
 
     .plus_minus {
-        
+
         display: flex;
         align-items: center;
         border: 1px solid var(--grey-divider, #DDD) !important;
@@ -471,7 +473,6 @@
             border-bottom: transparent !important;
             padding: 10px 0;
 
-
             p {
                 margin: 0 38px;
                 color: variables.$black;
@@ -479,6 +480,7 @@
                 font-size: 20px;
                 font-weight: 600;
                 line-height: 130%;
+                width: 10px;
             }
         }
 
@@ -515,7 +517,6 @@
     background-color: rgba(0, 0, 0, .4);
 
     .modal-content {
-        /* pop up */
         position: relative;
         top: 50%;
         left: 50%;
@@ -526,7 +527,7 @@
         border-radius: 12px;
         background: rgb(51, 153, 51);
 
-        .ttitle_close {
+        .title_close {
             margin-bottom: 24px;
             display: flex;
             align-items: center;
@@ -780,7 +781,9 @@
                     flex-direction: column !important;
 
                     .btn {
-                        padding: 16px 116px;
+                        padding: 16px 100px;
+                        width: 285px;
+                        font-size: 14px;
                         margin-top: 16px;
                         margin-left: 0;
                     }
@@ -804,8 +807,6 @@
                 font-size: 20px !important;
             }
 
-            .h_uch {
-            }
         }
     }
 
@@ -821,11 +822,6 @@
 
                 .plus_minus-box {
                     flex-direction: column !important;
-
-                    .btn {
-                        padding: 16px 95px;
-                        font-size: 14px;
-                    }
                 }
             }
         }
@@ -867,6 +863,31 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .modal {
+        .modal-content {
+            max-width: 90%;
+
+            .title_close {
+                margin-bottom: 12px !important;
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                .close__btn {
+                    img {
+                        width: 30px !important;
+                        height: 30px !important;
+                    }
+                }
+            }
+
+            p {
+                font-size: 16px;
             }
         }
     }
@@ -932,7 +953,30 @@
 
         .sale_form-box {
             width: 100% !important;
+
         }
     }
 
+    .modal {
+        .modal-content {
+            .title_close {
+                margin-bottom: 12px !important;
+
+                h4 {
+                    font-size: 18px !important;
+                }
+
+                .close__btn {
+                    img {
+                        width: 20px !important;
+                        height: 20px !important;
+                    }
+                }
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
 }

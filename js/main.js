@@ -1,3 +1,5 @@
+"use strict"
+
 // ! Categories start
 const categories = [
     {

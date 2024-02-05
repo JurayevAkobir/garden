@@ -224,22 +224,20 @@
                 }
             }
         }
-
         // Sale section end
-
-
-        .last-child {
-            margin-right: 0 !important;
-        }
     }
+    //  * Main end       
+}
 
-    //  * Main end
-
-    
+.last-child {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 
-// Media start
+// ! Media start
 @media screen and (max-width: 1380px) {
     .container {
         max-width: 90%;
@@ -334,9 +332,6 @@
         }
     }
 }
-
-
-
 
 @media screen and (max-width: 850px) {
     .first_section {
