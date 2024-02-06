@@ -35,27 +35,49 @@
 
         // * First section end
 
-        // Categories section start
+        // ! Categories section start
         .categories {
 
-            .categories_boxes {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
-                justify-content: space-between;
-                margin-top: 40px;
-                gap: 32px;
+            .tabs {
 
-                .categorie-box {
-                    text-align: center;
-                    margin-right: 32px;
+                .tabheader_items {
+                    padding: 0;
+                    margin: 24px 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
 
-                    h4 {
-                        margin-top: 16px;
-                        color: variables.$black;
-                        text-align: center;
+                    .tabheader_item {
+                        margin-left: 0;
+                        width: 180px;
+                        list-style: none;
                         font-size: 20px;
-                        font-weight: 500;
-                        line-height: 130%;
+                        margin-right: 30px;
+                    }
+
+                    .tabheader_item__active {
+                        background-color: variables.$black;
+                    } 
+                }
+                .categories_boxes {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    gap: 32px;
+    
+                    .categorie-box {
+                        text-align: center;
+                        margin-right: 32px;
+    
+                        h4 {
+                            margin-top: 16px;
+                            color: variables.$black;
+                            text-align: center;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 130%;
+                        }
                     }
                 }
             }
@@ -65,7 +87,7 @@
         // Categories section end
 
 
-        // Title
+        // ! Title
         .title {
             position: relative;
             margin-top: 80px;
@@ -107,7 +129,7 @@
         }
 
 
-        // Discount section start
+        // ! Discount section start
         .discount {
             margin: 80px 0;
 
@@ -160,11 +182,10 @@
                 }
             }
         }
-
         // Discount section end
 
 
-        // Sale section start
+        // ! Sale section start
         .sale {
             margin: 80px 0;
 
@@ -225,6 +246,16 @@
             }
         }
         // Sale section end
+
+        // ! Hide
+        .hide {
+            display: none;
+        }
+        
+        // ! Show
+        .show {
+            display: block;
+        }
     }
     //  * Main end       
 }

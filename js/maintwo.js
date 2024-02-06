@@ -40,6 +40,7 @@ const saleBoxesTwo = document.querySelector(".sale_boxes-js")
 saleProductsTwo.forEach((saleBoxTwo, indx) => {
     saleBoxesTwo.innerHTML += `
         <div class="sale_box">
+        <button class="btn btn_hover">${saleBoxTwo.btn}</button>
              <img src="${saleBoxTwo.img}" alt="sale_4">
             <div class="sale_texts">
                 <h4>${saleBoxTwo.name}</h4>
@@ -53,7 +54,6 @@ saleProductsTwo.forEach((saleBoxTwo, indx) => {
                 ? ` <button class="btn btn_position">${saleBoxTwo.discount}</button> `
                 : ''
             }</button>
-            <button class="btn btn_hover">${saleBoxTwo.btn}</button>
         </div>
         `
 });
