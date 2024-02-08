@@ -59,6 +59,7 @@
                         background-color: variables.$black;
                     } 
                 }
+                .categories_boxes_2,
                 .categories_boxes {
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
@@ -81,6 +82,35 @@
                     }
                 }
             }
+
+            .categories_boxes_2{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    gap: 30px;
+    
+                    .categorie-box {
+                        text-align: center;
+                        margin-right: 32px;
+
+                        img {
+                            width: 248px;
+                            height: 350px;
+                        }
+    
+                        h4 {
+                            margin: 0 auto ;
+                            width: 248px;
+                            margin-top: 16px;
+                            color: variables.$black;
+                            text-align: center;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 130%;
+                        }
+                    }
+                }
 
         }
 
@@ -255,6 +285,10 @@
         // ! Show
         .show {
             display: block;
+        }
+
+        .show_two {
+            display: grid;
         }
     }
     //  * Main end       

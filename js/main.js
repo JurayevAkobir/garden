@@ -1,107 +1,40 @@
 window.addEventListener("DOMContentLoaded", () => {
     "use strict"
 
-    // ! Categories start
-    const categories = [
-        {
-            name: "Fertilizer",
-            img: "./images/category_1.jpg"
-        },
-        {
-            name: "Protective products and septic tanks",
-            img: "./images/category_2.png"
-        },
-        {
-            name: "Planting material",
-            img: "./images/category_3.png"
-        },
-        {
-            name: "Tools and equipment",
-            img: "./images/category_4.png"
-        }
-    ];
-    const categoriesBoxes = document.querySelector(".categories_boxes")
-    categories.forEach((item, indx) => {
-        categoriesBoxes.innerHTML += `
-    <div class="categorie-box">
-		<img src="${item.img}" alt="category_1">
-		<h4>${item.name}</h4>
-    </div>
-    `
-    });
-    // * Categories end
-
-    // ! Categories-2 start
-    const categoriesTwo = [
-        {
-            name: "Fertilizer 2",
-            img: "./images/category_4.png"
-        },
-        {
-            name: "Protective products and septic tanks",
-            img: "./images/category_1.jpg"
-        },
-        {
-            name: "Planting material",
-            img: "./images/category_3.png"
-        },
-        {
-            name: "Tools and equipment",
-            img: "./images/category_2.png"
-        }
-    ];
-    const categoriesBoxesTwo = document.querySelector(".categories_boxes")
-    categoriesTwo.forEach((item, indx) => {
-        categoriesBoxesTwo.innerHTML += `
-    <div class="categorie-box">
-		<img src="${item.img}" alt="category_1">
-		<h4>${item.name}</h4>
-    </div>
-    `
-    });
-    // * Categories-2 end
-
-    // ! Categories-3 start
-    const categoriesThree = [
-        {
-            name: "Fertilizer 3",
-            img: "./images/category_2.png"
-        },
-        {
-            name: "Protective products and septic tanks",
-            img: "./images/category_4.png"
-        },
-        {
-            name: "Planting material",
-            img: "./images/category_1.jpg"
-        },
-        {
-            name: "Tools and equipment",
-            img: "./images/category_3.png"
-
-        }
-    ];
-    const categoriesBoxesThree = document.querySelector(".categories_boxes")
-    categoriesThree.forEach((item, indx) => {
-        categoriesBoxesThree.innerHTML += `
-    <div class="categorie-box">
-		<img src="${item.img}" alt="category_1">
-		<h4>${item.name}</h4>
-    </div>
-    `
-    });
-    // * Categories-3 end
-
-
     // ! Tabs start
-    const TabContent = document.querySelectorAll(".categories_boxes")
+    const TabContent = document.querySelectorAll(".categories_boxes"),
+        tabHeaderItem = document.querySelectorAll(".tabheader_item"),
+        parentItems = document.querySelectorAll(".tabheader_items");
+
 
     function hideTabContent() {
         TabContent.forEach(item => {
             item.classList.add("hide")
+            item.classList.remove("show_two")
         });
+
+        tabHeaderItem.forEach(item => {
+            item.classList.remove("tabheader_item__active")
+        })
     }
-    hideTabContent()
+
+    function showTabContent(i = 0) {
+        TabContent[i].classList.add("show_two")
+        TabContent[i].classList.remove("hide")
+
+        tabHeaderItem[i].classList.add("tabheader_item__active")
+    }
+    hideTabContent();
+    showTabContent();
+
+    parentItems.addEventListener("click", (event) => {
+        if (event.target && event.target.classList.contains('tabheader_item')) {
+            console.log(event.target);
+            tabHeaderItem.forEach(item => {
+                console.log(item);
+            });
+        }
+    })
 
     // ! Sale start
     const saleProducts = [

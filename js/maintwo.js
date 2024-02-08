@@ -40,20 +40,20 @@ const saleBoxesTwo = document.querySelector(".sale_boxes-js")
 saleProductsTwo.forEach((saleBoxTwo, indx) => {
     saleBoxesTwo.innerHTML += `
         <div class="sale_box">
-        <button class="btn btn_hover">${saleBoxTwo.btn}</button>
+        <a href="./product.html" class="btn btn_hover">${saleBoxTwo.btn}</a>
              <img src="${saleBoxTwo.img}" alt="sale_4">
             <div class="sale_texts">
                 <h4>${saleBoxTwo.name}</h4>
                 <h2>${saleBoxTwo.newPrice}</h2>
                 <del> ${saleBoxTwo.oldPrice
-                    ? ` <del>${saleBoxTwo.oldPrice}</del> `
-                    : ''
-                }</del>
+            ? ` <del>${saleBoxTwo.oldPrice}</del> `
+            : ''
+        }</del>
             </div>
             <button>${saleBoxTwo.discount
-                ? ` <button class="btn btn_position">${saleBoxTwo.discount}</button> `
-                : ''
-            }</button>
+            ? ` <button class="btn btn_position">${saleBoxTwo.discount}</button> `
+            : ''
+        }</button>
         </div>
         `
 });
@@ -99,16 +99,16 @@ saleProductsTwoBox.forEach((saleBoxtwo, indx) => {
                     <h4>${saleBoxtwo.name}</h4>
                     <h2>${saleBoxtwo.newPrice}</h2>
                     ${saleBoxtwo.oldPrice
-                        ? ` <del>${saleBoxtwo.oldPrice}</del> `
-                        : ''
-                    }
+            ? ` <del>${saleBoxtwo.oldPrice}</del> `
+            : ''
+        }
                     
                 </div>
                 ${saleBoxtwo.discount
             ? ` <button class="btn btn_position">${saleBoxtwo.discount}</button> `
             : ''
         }
-                <button class="btn btn_hover">${saleBoxtwo.btn}</button>
+        <a href="./product.html" class="btn btn_hover">${saleBoxtwo.btn}</a>
             </div>
             `
 });
