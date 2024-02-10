@@ -1,40 +1,40 @@
 window.addEventListener("DOMContentLoaded", () => {
     "use strict"
 
-    // ! Tabs start
-    const TabContent = document.querySelectorAll(".categories_boxes"),
-        tabHeaderItem = document.querySelectorAll(".tabheader_item"),
-        parentItems = document.querySelectorAll(".tabheader_items");
+    // // ! Tabs start
+    // const TabContent = document.querySelectorAll(".categories_boxes"),
+    //     tabHeaderItem = document.querySelectorAll(".tabheader_item"),
+    //     parentItems = document.querySelectorAll(".tabheader_items");
 
 
-    function hideTabContent() {
-        TabContent.forEach(item => {
-            item.classList.add("hide")
-            item.classList.remove("show_two")
-        });
+    // function hideTabContent() {
+    //     TabContent.forEach(item => {
+    //         item.classList.add("hide")
+    //         item.classList.remove("show_two")
+    //     });
 
-        tabHeaderItem.forEach(item => {
-            item.classList.remove("tabheader_item__active")
-        })
-    }
+    //     tabHeaderItem.forEach(item => {
+    //         item.classList.remove("tabheader_item__active")
+    //     })
+    // }
 
-    function showTabContent(i = 0) {
-        TabContent[i].classList.add("show_two")
-        TabContent[i].classList.remove("hide")
+    // function showTabContent(i = 0) {
+    //     TabContent[i].classList.add("show_two")
+    //     TabContent[i].classList.remove("hide")
 
-        tabHeaderItem[i].classList.add("tabheader_item__active")
-    }
-    hideTabContent();
-    showTabContent();
+    //     tabHeaderItem[i].classList.add("tabheader_item__active")
+    // }
+    // hideTabContent();
+    // showTabContent();
 
-    parentItems.addEventListener("click", (event) => {
-        if (event.target && event.target.classList.contains('tabheader_item')) {
-            console.log(event.target);
-            tabHeaderItem.forEach(item => {
-                console.log(item);
-            });
-        }
-    })
+    // parentItems.addEventListener("click", (event) => {
+    //     if (event.target && event.target.classList.contains('tabheader_item')) {
+    //         console.log(event.target);
+    //         tabHeaderItem.forEach(item => {
+    //             console.log(item);
+    //         });
+    //     }
+    // })
 
     // ! Sale start
     const saleProducts = [
