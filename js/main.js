@@ -1,40 +1,36 @@
 window.addEventListener("DOMContentLoaded", () => {
-    "use strict"
 
-    // // ! Tabs start
-    // const TabContent = document.querySelectorAll(".categories_boxes"),
-    //     tabHeaderItem = document.querySelectorAll(".tabheader_item"),
-    //     parentItems = document.querySelectorAll(".tabheader_items");
+    // ! Tabs
 
+    const tabContent = document.querySelectorAll(".categories_boxes"),
+        parentItem = document.querySelectorAll(".tabheader_items"),
+        tabHeaderItem = document.querySelectorAll(".tabheader_item");
 
-    // function hideTabContent() {
-    //     TabContent.forEach(item => {
-    //         item.classList.add("hide")
-    //         item.classList.remove("show_two")
-    //     });
+    function hideTabContent() {
+        tabContent.forEach(item => {
+            item.classList.add("hide");
+            item.classList.remove("show");
+        })
 
-    //     tabHeaderItem.forEach(item => {
-    //         item.classList.remove("tabheader_item__active")
-    //     })
-    // }
+        tabHeaderItem.forEach(item => {
+            item.classList.remove("tabheader_item__active");
+        })
+    }
 
-    // function showTabContent(i = 0) {
-    //     TabContent[i].classList.add("show_two")
-    //     TabContent[i].classList.remove("hide")
+    function showTabContent(i = 0) {
+        tabContent.forEach(item => {
+            tabContent[i].classList.remove("hide");
+            tabContent[i].classList.add("show_two");
 
-    //     tabHeaderItem[i].classList.add("tabheader_item__active")
-    // }
-    // hideTabContent();
-    // showTabContent();
+            tabHeaderItem[0].classList.add("tabheader_item__active")
+        })
+    }
+    hideTabContent();
+    showTabContent();
 
-    // parentItems.addEventListener("click", (event) => {
-    //     if (event.target && event.target.classList.contains('tabheader_item')) {
-    //         console.log(event.target);
-    //         tabHeaderItem.forEach(item => {
-    //             console.log(item);
-    //         });
-    //     }
-    // })
+    parentItem.addEventListener('click', (event) => {
+        console.log(event);
+    })
 
     // ! Sale start
     const saleProducts = [
@@ -67,24 +63,18 @@ window.addEventListener("DOMContentLoaded", () => {
             img: "./images/sale_4.png"
         }
     ];
-
     const saleBoxes = document.querySelector(".sale_boxes")
-
     saleProducts.forEach((saleBox, indx) => {
         saleBoxes.innerHTML += `
-    <div class="sale_box">
-		<img src="${saleBox.img}" alt="sale_1">
-		<div class="sale_texts">
-			<h4>${saleBox.name}</h4>
-			<h2 class="h_two">${saleBox.newPrice}</h2>
-			<del>${saleBox.oldPrice}</del>
-		</div>
-		<button class="btn btn_position">${saleBox.discount}</button>
-	</div>
-    `
+        <div class="sale_box">
+		    <img src="${saleBox.img}" alt="sale_1">
+		    <div class="sale_texts">
+		    	<h4>${saleBox.name}</h4>
+			    <h2 class="h_two">${saleBox.newPrice}</h2>
+		    	<del>${saleBox.oldPrice}</del>
+		    </div>
+		    <button class="btn btn_position">${saleBox.discount}</button>
+	    </div>
+         `
     });
-
 })
-
-
-

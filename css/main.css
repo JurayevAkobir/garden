@@ -196,25 +196,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .header .header_nav .header_ul {
-    padding-top: 30px !important;
-    margin-top: 0;
-    position: fixed;
-    top: 0;
-    left: -100%;
     width: 45%;
-    height: 110%;
-    background-color: #D9D9D9;
-    z-index: 999;
-    flex-direction: column;
-    padding-left: 65px;
-    transition: all 0.8s ease-in-out;
-  }
-  .header .header_nav .header_ul .header_items {
-    display: block;
-    padding-bottom: 8px;
-  }
-  .header .header_nav .header_ul .header_items .header_link {
-    font-size: 16px !important;
   }
 }
 .wrapper .footer h1 {
@@ -273,18 +255,22 @@ body {
   padding: 0;
   margin: 24px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
+  justify-content: start;
   align-items: center;
 }
 .wrapper .main .categories .tabs .tabheader_items .tabheader_item {
+  padding: 10px 24px;
   margin-left: 0;
-  width: 180px;
   list-style: none;
+  margin-right: 24px;
   font-size: 20px;
-  margin-right: 30px;
+  color: #FFF;
+  background-color: darkviolet;
+  border-radius: 12px;
 }
 .wrapper .main .categories .tabs .tabheader_items .tabheader_item__active {
-  background-color: #282828;
+  background-color: navy;
 }
 .wrapper .main .categories .tabs .categories_boxes_2,
 .wrapper .main .categories .tabs .categories_boxes {
@@ -473,7 +459,7 @@ body {
   display: block;
 }
 .wrapper .main .show_two {
-  display: grid;
+  display: grid !important;
 }
 
 .last-child {

@@ -44,21 +44,26 @@
                     padding: 0;
                     margin: 24px 0;
                     display: flex;
-                    flex-wrap: wrap;
+                    flex-wrap: wrap !important;
+                    justify-content: start;
                     align-items: center;
 
                     .tabheader_item {
+                        padding: 10px 24px;
                         margin-left: 0;
-                        width: 180px;
                         list-style: none;
+                        margin-right: 24px;
                         font-size: 20px;
-                        margin-right: 30px;
+                        color: variables.$white;
+                        background-color: darkviolet;
+                        border-radius: 12px;
                     }
 
                     .tabheader_item__active {
-                        background-color: variables.$black;
-                    } 
+                        background-color: navy;
+                    }
                 }
+
                 .categories_boxes_2,
                 .categories_boxes {
                     display: grid;
@@ -66,11 +71,11 @@
                     justify-content: space-between;
                     margin-top: 40px;
                     gap: 32px;
-    
+
                     .categorie-box {
                         text-align: center;
                         margin-right: 32px;
-    
+
                         h4 {
                             margin-top: 16px;
                             color: variables.$black;
@@ -83,34 +88,34 @@
                 }
             }
 
-            .categories_boxes_2{
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
-                    justify-content: space-between;
-                    margin-top: 40px;
-                    gap: 30px;
-    
-                    .categorie-box {
-                        text-align: center;
-                        margin-right: 32px;
+            .categories_boxes_2 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+                justify-content: space-between;
+                margin-top: 40px;
+                gap: 30px;
 
-                        img {
-                            width: 248px;
-                            height: 350px;
-                        }
-    
-                        h4 {
-                            margin: 0 auto ;
-                            width: 248px;
-                            margin-top: 16px;
-                            color: variables.$black;
-                            text-align: center;
-                            font-size: 20px;
-                            font-weight: 500;
-                            line-height: 130%;
-                        }
+                .categorie-box {
+                    text-align: center;
+                    margin-right: 32px;
+
+                    img {
+                        width: 248px;
+                        height: 350px;
+                    }
+
+                    h4 {
+                        margin: 0 auto;
+                        width: 248px;
+                        margin-top: 16px;
+                        color: variables.$black;
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 130%;
                     }
                 }
+            }
 
         }
 
@@ -212,6 +217,7 @@
                 }
             }
         }
+
         // Discount section end
 
 
@@ -275,22 +281,24 @@
                 }
             }
         }
+
         // Sale section end
 
         // ! Hide
         .hide {
             display: none;
         }
-        
+
         // ! Show
         .show {
             display: block;
         }
 
         .show_two {
-            display: grid;
+            display: grid !important;
         }
     }
+
     //  * Main end       
 }
 
