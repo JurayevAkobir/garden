@@ -1,5 +1,13 @@
 window.addEventListener("DOMContentLoaded", () => {
+    // ! Loader 
+    const loader = document.querySelector(".loader_box")
+    setTimeout(() => {
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 500)
+        loader.style.opacity = "0";
 
+    }, 3000)
     // ! Tabs
 
     const tabContent = document.querySelectorAll(".categories_boxes"),
@@ -29,7 +37,7 @@ window.addEventListener("DOMContentLoaded", () => {
     showTabContent();
 
     parentItem.addEventListener('click', (event) => {
-        console.log(event);
+        console.log(event.target);
     })
 
     // ! Sale start
@@ -77,4 +85,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	    </div>
          `
     });
+
+
 })
