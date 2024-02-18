@@ -1,4 +1,5 @@
-const plusMinus = document.querySelectorAll(".plus_minus "),
+window.addEventListener("DOMContentLoaded", () => {
+    const plusMinus = document.querySelectorAll(".plus_minus "),
     plus = document.querySelectorAll(".plus_btn"),
     value = document.querySelectorAll(".value"),
     minus = document.querySelectorAll(".minus_btn");
@@ -22,4 +23,4 @@ console.log(element);
 //     })
     
 // });
-
+})

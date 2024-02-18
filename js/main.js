@@ -1,23 +1,23 @@
 window.addEventListener("DOMContentLoaded", () => {
     // ! Loader 
-    const loader = document.querySelector(".loader_box")
+    const loader = document.querySelector(".loader_box");
     setTimeout(() => {
         setTimeout(() => {
             loader.style.display = "none";
         }, 500)
         loader.style.opacity = "0";
 
-    }, 3000)
+    }, 2000)
     // ! Tabs
 
     const tabContent = document.querySelectorAll(".categories_boxes"),
-        parentItem = document.querySelectorAll(".tabheader_items"),
+        parentItem = document.querySelector(".tabheader_items"),
         tabHeaderItem = document.querySelectorAll(".tabheader_item");
 
     function hideTabContent() {
         tabContent.forEach(item => {
             item.classList.add("hide");
-            item.classList.remove("show");
+            item.classList.remove("show_two");
         })
 
         tabHeaderItem.forEach(item => {
@@ -29,15 +29,23 @@ window.addEventListener("DOMContentLoaded", () => {
         tabContent.forEach(item => {
             tabContent[i].classList.remove("hide");
             tabContent[i].classList.add("show_two");
+            tabContent[i].classList.add("fade");
 
-            tabHeaderItem[0].classList.add("tabheader_item__active")
+            tabHeaderItem[i].classList.add("tabheader_item__active")
         })
     }
     hideTabContent();
     showTabContent();
 
     parentItem.addEventListener('click', (event) => {
-        console.log(event.target);
+        if (event.target && event.target.classList.contains("tabheader_item")) {
+            tabHeaderItem.forEach((item, index) => {
+                if (event.target === item) {
+                    hideTabContent();
+                    showTabContent(index);
+                }
+            })
+        }
     })
 
     // ! Sale start
@@ -85,6 +93,4 @@ window.addEventListener("DOMContentLoaded", () => {
 	    </div>
          `
     });
-
-
 })

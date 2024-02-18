@@ -268,7 +268,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border-radius: var(--radius-big, 12px);
+                border-radius: var(--radius-big, 15px);
                 border: 1px solid var(--grey-divider, #DDD);
 
                 .tool {
@@ -573,6 +573,21 @@ input::-webkit-inner-spin-button {
             line-height: 110%;
         }
 
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 

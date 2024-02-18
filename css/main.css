@@ -453,10 +453,24 @@ body {
   padding: 4px 8px;
 }
 .wrapper .main .hide {
+  opacity: 1;
   display: none;
 }
 .wrapper .main .show {
+  opacity: 0;
   display: block;
+}
+.wrapper .main .fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .wrapper .main .show_two {
   display: grid !important;
@@ -677,7 +691,7 @@ body {
   .title .title_h {
     color: #282828;
     font-size: 44px !important;
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
   }
   .title .line_img {
     display: none;
@@ -699,19 +713,22 @@ body {
     font-size: 12px;
     padding: 12px 26px;
   }
-  .categories .categories_boxes {
+  .categories .tabs .tabheader_items .tabheader_item {
+    font-size: 14px !important;
+  }
+  .categories .tabs .categories_boxes_2 .categories_boxes {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
     margin-left: 30px;
   }
-  .categories .categories_boxes .categorie-box {
+  .categories .tabs .categories_boxes_2 .categories_boxes .categorie-box {
     width: 280px !important;
     text-align: center;
     margin-right: 32px;
   }
-  .categories .categories_boxes .categorie-box img {
+  .categories .tabs .categories_boxes_2 .categories_boxes .categorie-box img {
     width: 280px;
   }
   .sale .sale_boxes {
@@ -936,7 +953,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: var(--radius-big, 12px);
+  border-radius: var(--radius-big, 15px);
   border: 1px solid var(--grey-divider, #DDD);
 }
 .shopping_cart .sale_big-boxes .sale_boxes-two .sale_box-two .tool {
@@ -1186,6 +1203,19 @@ input::-webkit-inner-spin-button {
   line-height: 110%;
 }
 
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 1380px) {
   .shopping_cart .sale_product .tool_img {
     width: 480px;
